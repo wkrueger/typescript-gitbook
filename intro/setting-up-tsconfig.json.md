@@ -10,7 +10,7 @@ tsc -w main.ts
 
 #### A simple project
 
-For a project, it is recommended that you install TypeScript _project-locally_ so that your project is tied to a specific TS version. In VSCode, `tsc` can be invoked through F1 &gt; Run Build Task. You should also include a link for it in the package.json `scripts`.
+For a project, it is recommended that you install TypeScript _locally_ so that your project is tied to a specific TS version. In VSCode, `tsc` can be invoked through F1 &gt; Run Build Task. You should also include a link for it in the package.json `scripts`.
 
 `tsc` looks for a `tsconfig.json` file in the same folder. This also allows it to be called without arguments. The `tsconfig` accepts an overwhelming set of compiler options -- since it mixes compiling and type checking options. Below I'll go through a set of recommended settings.
 
