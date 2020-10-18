@@ -25,8 +25,8 @@ interface Animal {
 
 You can't ever modify a type, but you can always create a new type based on another existing one;
 
-```text
-interface Cat extends Animal {
+```typescript
+interface tCat extends Animal {
   isCatnipped: boolean;
 }
 type MeowingCat = Cat & { meow(): void };
@@ -40,7 +40,7 @@ type MeowingCat = Cat & { meow(): void };
 
 The final purpose of a type is to be linked to a concrete "living" variable, so its sins can be checked by the compiler.
 
-```text
+```typescript
 const myFatCat: MeowingCat = {
   weight: 2.4,
   iscatnipped: false, //error!!
@@ -54,7 +54,7 @@ const myFatCat: MeowingCat = {
 
 * Every variable will **always** have a type. If I don't explicitly assign a type, the compiler will then infer one from the initial assignment; On VSCode, one can easily check the type of anything by mouse-overing.
 
-```text
+```typescript
 const barkingFatCat = {
   ...myFatCat,
   bark() {
