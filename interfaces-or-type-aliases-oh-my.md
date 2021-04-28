@@ -2,10 +2,10 @@
 
 * Which one to use? Whatever... both declare types! It is complicated.
 * **Type aliases** can receive other things than objects; Most noticeable exclusive to those are:
-  * Type unions and intersections;
-  * Conditional types;
+  * Type unions \(`A & B` \) and intersections \(`A | B` \);
+  * Conditional types \(see "advanced" section\);
 * **Interfaces** work exclusively with objects \(functions are also objects!\). Exclusive to interfaces are:
-  * The OOPish `extends` clause, which is somewhat similar to the type intersection of two objects;
+  * The OOP `extends` clause, which is somewhat similar to the type intersection of two objects;
   * **Declaration merging**. When you declare 2 interfaces with the same name, instead of clashing, their properties will merge. \(They can still clash if their properties are incompatible, of course\);
   * Common use of declaration merging: Add another property to the global DOM's `Window` declaration.
 
