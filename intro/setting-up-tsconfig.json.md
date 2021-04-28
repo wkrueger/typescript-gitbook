@@ -1,5 +1,9 @@
 # Setting up tsconfig.json
 
+> If you are using a build package like _create-react-app_ or _next.js_, TS already comes set up for you. Check the docs from your build package to learn how to set up TS on that environment.
+>
+> The guide below shows a sample TS setup without the use of _webpack_ .
+
 Using the TypeScript compiler \(`tsc`\) is the most simple way to get started. Probably simpler than any Babel-related setup you've ever used. `tsc` can be added to your PATH by globally installing TypeScript \(`npm i -g typescript`\).
 
 ```text
