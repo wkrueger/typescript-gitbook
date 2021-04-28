@@ -4,7 +4,7 @@
 >
 > The guide below shows a sample TS setup without the use of _webpack_ .
 
-Using the TypeScript compiler \(`tsc`\) is the most simple way to get started. Probably simpler than any Babel-related setup you've ever used. `tsc` can be added to your PATH by globally installing TypeScript \(`npm i -g typescript`\).
+Using the TypeScript compiler \(`tsc`\) is a simple way to get started.`tsc` can be added to your PATH by globally installing TypeScript \(`npm i -g typescript`\).
 
 ```text
 tsc -w main.ts
