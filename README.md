@@ -9,3 +9,9 @@ What will we go through:
 * Type system overview;
 * Caveats from someone used to JavaScript;
 
+What is out of scope of this guide:
+
+* This is not a JS course, JS knowledge is already expected;
+
+
+
