@@ -69,7 +69,7 @@ const barkingFatCat = {
 
 > An important advice about working with typescript: **\*\*mouseover everything\*\***. Every variable. Every time. Extensively.
 >
-> Seriously, you can do a big bit of "debugging" just by carefully inspecting every variable's inferred type.
+> You can do a lot of "debugging" just by carefully inspecting every variable's inferred type.
 
 **A lifelong link**
 
