@@ -15,11 +15,9 @@ Types are declared by either the `type` or the `interface` statements. While tho
 interface Animal {
   weight: number;
 }
-// the word "interface" may be misleading.
-// In TS, "interface" just means representing a JS object type
-// since it is just a JS object, any property type is allowed,
-// not just methods
 ```
+
+The word "interface" may be misleading if you've already used languages like Java or C\#. In TS, an _interface_ just represents a JS object. Which means that any valid JS property can fit in an interface \(not just methods\).
 
 **Types are immutable**
 
