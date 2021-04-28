@@ -19,9 +19,9 @@ interface Animal {
       //  - the "void" type is mostly only used in function returns, and
       //    has subtle differences from undefined
     (): void
-      // declare this object as "callable" - this is hardly ever used.
+      // declare this object as "callable" (funcions are objects!)
     new (): Animal
-      // declare this object as "newable" - this is hardly ever used.
+      // declare this object as "newable"
 }
 
 interface Cat extends Animal {
