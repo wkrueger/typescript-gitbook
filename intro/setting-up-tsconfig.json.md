@@ -1,6 +1,6 @@
 # Setting up tsconfig.json
 
-> If you are using a build package like _create-react-app_ or _next.js_, TS already comes set up for you. Check the docs from your build package to learn how to set up TS on that environment.
+> If you are using a build package like _create-react-app_ or _next.js_, TS already comes set up for you. Check the docs from your build package to learn how to configure TS on that environment.
 >
 > The guide below shows a sample TS setup without the use of _webpack_ .
 
