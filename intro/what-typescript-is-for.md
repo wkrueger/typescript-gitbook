@@ -6,7 +6,7 @@ TypeScript is used as sort of an advanced **linter**, as it points errors in you
 
 In order to collect those data structures, TS uses inference in your code. TS already knows a lot of type data from plain JS alone, but you can also complement those with extra **type annotations**.
 
-> There are a few exceptions of TS features that deviate from the philosophy that "TS is only for type-checking". Those features are mostly old and TS doesn't want to add more of those. They should be treated as exceptions.
+> There are a few exceptions of TS features that deviate from the philosophy that "TS is only for type-checking". Those features are mostly from the early ages of TS and they don't want to add more of those. They should be treated as exceptions.
 >
 > Exemples of those features: Class annotations, namespaces \(don't use them\), non-string enums.
 
