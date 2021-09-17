@@ -9,7 +9,7 @@ TypeScript is made to adapt to JavaScript. And JavaScript itself has had many mo
 #### Module-less typescript
 
 * A TypeScript file is considered module-less if it has no imports or exports;
-* On a module-less project, variable declarations work in a global context, like you were in a browser environment. The variables you declare on file X will be available on file Y. The TS files are specified in the `include` entry of the tsconfig;
+* On a module-less file, variable declarations work in a global context, like you were in a browser environment. The variables you declare on file X will be available on file Y. The TS files are specified in the `include` entry of the tsconfig;
 
 ```typescript
 // file1.ts
