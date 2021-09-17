@@ -46,5 +46,13 @@ type X = Unwrap<Promise<number>>  // X will be 'number'
 type DummyWithoutA = Omit<Dummy, 'a'>
 ```
 
+* `declare` declares a variable for type-checking, without emitting it on JS;
+
+```typescript
+declare var Container: Record<string, any>
+Container['tiger'] = 'tiger';
+// this code will fail on JS but TS compiler won't complain
+```
+
 When you want to dig deeper, I'd strongly recommend checking the [Typescript playground samples session](http://www.typescriptlang.org/play/?e=67#example/any).
 
