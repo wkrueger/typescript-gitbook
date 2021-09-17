@@ -107,7 +107,7 @@ Let's say you are in a node.js environment and `esModuleInterop` turned off. The
 
 ```typescript
 // this is es-module syntax
-import express from 'express`
+import express from 'express'
 ```
 
 This happens because es-module default import looks for a key named `default` in the module, which does not exist.
