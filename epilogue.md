@@ -14,4 +14,3 @@ On a future chapter maybe:
 
 * Domain specific things; React + TS? node + TS?
 * Writing type definitions.
-

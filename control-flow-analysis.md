@@ -15,7 +15,7 @@ function cfaSample(x: number|string) {
 } // inferred return type: string|[number]
 ```
 
-* Some expressions \(`typeof x === 'string'`\) act as "type guards", narrowing the possible types of a variable inside a context \(the if statement\);
+* Some expressions (`typeof x === 'string'`) act as "type guards", narrowing the possible types of a variable inside a context (the if statement);
 * `x` is narrowed from `number|string` to `string` inside the if block;
 * `x` only can by `number` at the last line, since the `if` block returns;
 * The function gets an inferred return type corresponding to an union of all return paths;
@@ -25,7 +25,7 @@ function cfaSample(x: number|string) {
 * The type `Actions` below is called a _discriminated union_ . The property `type` is used  as a tag to filter out which of the union options is valid at the context;
 * At each `case` line below, `action.data` has its type narrowed down;
 
-```text
+```
 type Actions =
   | { type: "create"; data: { name: string } }
   | { type: "delete"; data: { id: number } }
@@ -42,4 +42,3 @@ function reducer(action: Actions) {
   }
 }
 ```
-

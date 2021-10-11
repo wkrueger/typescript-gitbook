@@ -31,7 +31,7 @@ function hello<X = string>() {
 }
 ```
 
-#### Argument inference
+## Argument inference
 
 * A generic function will, at first, require that you supply its type parameters;
 
@@ -59,7 +59,7 @@ makeData<string>(2)  // will raise an error since type parameter
                      // and argument are incoherent
 ```
 
-#### Bounded type parameters
+## Bounded type parameters
 
 * A type argument can have constraints;
 
@@ -70,4 +70,3 @@ function acceptObject<Input extends { x: number }>(i: Input) {
 acceptObject({}) // error, must at least have x
 acceptObject({ x: 2, y: 3 }) // ok, and returns { x, y }
 ```
-

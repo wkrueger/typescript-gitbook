@@ -8,7 +8,7 @@
 >
 > **Be careful:** Both types `{}` and `object` refer to an **empty object**. To declare an object that can receive _any_ property, use `Record<string, any>`.
 
-#### Strict nulls
+## Strict nulls
 
 * Unlike some other languages, types do not implicitly include `null`;
 * Ex: in Java, any variable can always also be null;
@@ -32,4 +32,3 @@ const instance: X = {}
 console.log(instance.optional.value) // TS will show error
 console.log(instance.optional!.value) // assume "optional" exists
 ```
-

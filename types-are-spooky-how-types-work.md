@@ -1,4 +1,4 @@
-# Types are spooky! \(How types work?\)
+# Types are spooky! (How types work?)
 
 Types live in a separate world set apart from the "concrete variables" world. Think of it as the "upside-down" of types.
 
@@ -15,33 +15,30 @@ Types are declared by either the `type` or the `interface` statements. While tho
 interface Animal {
   weight: number;
 }
+// the word "interface" may be misleading.
+// In TS, "interface" just means representing a JS object type
+// since it is just a JS object, any property type is allowed,
+// not just methods
 ```
-
-The word "interface" may be misleading if you've already used languages like Java or C\#. In TS, an _interface_ just represents a JS object. Which means that any valid JS property can fit in an interface \(not just methods\).
 
 **Types are immutable**
 
 You can't ever modify a type, but you can always create a new type based on another existing one;
 
 ```typescript
-interface Cat extends Animal {
+interface tCat extends Animal {
   isCatnipped: boolean;
 }
 type MeowingCat = Cat & { meow(): void };
+// We have
+// - created new types based on existing ones
+// - both "extends" and "type intersection (&)" syntaxes ended up performing the
+//   same structural operation: adding a new property the type
 ```
-
-On the sample above, we have:
-
-* Created new types based on existing ones;
-* We created `Cat` by adding an extra property to `Animal`;
-* We created `MeowingCat`by adding an extra property to `Cat`;
-* On both cases, we performed a similar operation: _adding an extra property._ We have used 2 different ways to achieve that: `extends` or `type union &` . Both options work fine, you can use any of them.
-
-\*\*\*\*
 
 **A purpose in life**
 
-The final purpose of a type is to be **linked** to a concrete "living" variable. The compiler then compares both to ensure everything is ok.
+The final purpose of a type is to be linked to a concrete "living" variable, so its sins can be checked by the compiler.
 
 ```typescript
 const myFatCat: MeowingCat = {
@@ -69,7 +66,7 @@ const barkingFatCat = {
 
 > An important advice about working with typescript: **\*\*mouseover everything\*\***. Every variable. Every time. Extensively.
 >
-> You can do a lot of "debugging" just by carefully inspecting every variable's inferred type.
+> Seriously, you can do a big bit of "debugging" just by carefully inspecting every variable's inferred type.
 
 **A lifelong link**
 
@@ -78,4 +75,3 @@ const barkingFatCat = {
 **Going the other way**
 
 * The inverse operation -- retrieving a type from a variable -- is possible with the `typeof` statement. `type StrangeCat = typeof barkingFatCat`.
-

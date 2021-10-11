@@ -39,9 +39,8 @@ person4.name = "John";
 person4.last.name = "Wick"; // this won't type-error, even if wrong
 ```
 
-#### On the productive use of `any` and other loose types
+## On the productive use of `any` and other loose types
 
 Every time a developer assigns `any` to a variable, it acknowledges that TS will stop checking it, facing all the consequences this may bring.
 
 While it's not advisable to use `any`, sometimes it can be hard to correctly set the type of a variable, especially when learning the language - or even when facing its limitations. Using `any` is not a crime and sometimes is necessary and productive. One should balance between not using `any` excessively but also not to spend much time trying to fix a type error.
-

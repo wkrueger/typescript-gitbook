@@ -1,6 +1,6 @@
 # More advanced type syntaxes for another day
 
-\(A _veryfast_ reference overview below. Don't worry if you don't understand something, just know that those exist, so you can research later.\)
+(A _veryfast_ reference overview below. Don't worry if you don't understand something, just know that those exist, so you can research later.)
 
 * _Mapped types_ is a syntax used to declare generic objects.
 
@@ -46,13 +46,4 @@ type X = Unwrap<Promise<number>>  // X will be 'number'
 type DummyWithoutA = Omit<Dummy, 'a'>
 ```
 
-* `declare` declares a variable for type-checking, without emitting it on JS;
-
-```typescript
-declare var Container: Record<string, any>
-Container['tiger'] = 'tiger';
-// this code will fail on JS but TS compiler won't complain
-```
-
 When you want to dig deeper, I'd strongly recommend checking the [Typescript playground samples session](http://www.typescriptlang.org/play/?e=67#example/any).
-
