@@ -1,6 +1,6 @@
 # What Typescript IS for?
 
-## Type checking, works like a linter
+## Works like a linter
 
 TypeScript is used as sort of an advanced **linter**, as it points errors in your code based on the coherence of the _data structures_ present in it. I emphasize the term _linter_ here because type-check errors really don't block your code from being compiled. The errors are just there to provide you hints.
 
