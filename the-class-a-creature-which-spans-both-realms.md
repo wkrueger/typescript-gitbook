@@ -3,7 +3,7 @@
 Classes in TypeScript have a few extra features compared to JS classes, mostly related to type-checking.
 
 * You can declare uninitialized properties on the class body; Those don't generate JS code, they just declare types for checking.
-* If a property is not initialized on the constructor, or directly, TS will complain. You can either declare a property as optional (append `?`) or assume it is not null (append `!`).
+* If a declared property is not initialized on the constructor, or directly, TS will complain. To fix this you can either declare a property as optional (append `?`) or assume it is not null (append `!`).
 
 ```typescript
 class Foo {
@@ -15,6 +15,9 @@ class Foo {
     certainlyNotNull!: number
 }
 ```
+
+> The operator `!` can be postponed to any identifier to tell TypeScript that you assume it will never be null.  
+> Ex: If `person` is of type `Person | undefined`, then `person!` will be of type `Person`.
 
 * Access modifiers (`private`, `protected` and `public`) are a thing; Yet again, they only serve as hints to the type-checker. A `private` declared property will still be emitted and visible in JS code.
 * Class fields can be initialized in-body (same as JS, recent-y proposal);
@@ -36,6 +39,8 @@ class Foo {
     constructor(private name: string) {} // declares a private property "name"
 }
 ```
+
+> While we previously said that TS would avoid adding code-generating features not present in JS, there are some few exceptions from the early versions of the project. This is one of them.
 
 **Both worlds**
 
