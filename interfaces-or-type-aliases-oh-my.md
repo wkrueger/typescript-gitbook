@@ -20,7 +20,7 @@ var person: CallablePerson = { name: 'John' } // error, missing "phone"
 
 # Interfaces or Type Aliases? Oh, my!
 
-* Which one to use? Whatever... both declare types! It is complicated.
+* Which one to use? Whatever. Both declare types!
 * **Type aliases** can receive other things than objects; It can receive any declared type. Most noticeable exclusive to those are:
   * Type unions and intersections;
   * Conditional types;
