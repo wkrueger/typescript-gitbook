@@ -16,7 +16,7 @@ class Foo {
 }
 ```
 
-> The operator `!` can be postponed to any identifier to tell TypeScript that you assume it will never be null.  
+> The operator `!` can be postponed to a concrete identifier to tell TypeScript that you assume it will not be null.  
 > Ex: If `person` is of type `Person | undefined`, then `person!` will be of type `Person`.
 
 * Access modifiers (`private`, `protected` and `public`) are a thing; Yet again, they only serve as hints to the type-checker. A `private` declared property will still be emitted and visible in JS code.
