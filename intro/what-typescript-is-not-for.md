@@ -11,6 +11,10 @@ Since it is made to fit already existing JS patterns, TS's type system is quite 
 
 Due to the nature of _static typing_, you will eventually need to adapt some dynamic patterns or lean to more functional patterns, but those will be tiny and beneficial changes. More info on that ahead.
 
+> Providing a precise, sound type system like in a functional language
+
+TypeScript main goal is to adjust to existing JS patterns, not to suggest new ones. As such, "soundness" is not a requirement, in favor or more flexible typing, even if less precise.
+
 **Real cons of using TypeScript**
 
 Setting up TS in modern frontend projects (webpack-based) used to be a pain. This has changed drastically since the Babel integration came, along with support on popular templates like create-react-app. Community support in this area has now raised a lot, bringing goodies like better library typings.
