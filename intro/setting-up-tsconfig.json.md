@@ -10,7 +10,7 @@ tsc -w main.ts
 
 ## A simple project
 
-> Below we go through setting tsconfig.json for a simple project compiled using `tsc`. If you are using a predefined build pack like "Create React App", "Next.js" or "Nest.js",
+> Below we go through setting tsconfig.json for a simple project compiled using `tsc`. This is mostly commonly used in backend projects. If you are using a predefined build pack like "Create React App", "Next.js" or "Nest.js",
 > this already comes set up. Also, those build configurations use javascript bundlers like "Webpack" or "SWC" instead of raw `tsc`.
 
 For a project, it is recommended that you install TypeScript _locally_ so that your project is tied to a specific TS version. In VSCode, `tsc` can be invoked through F1 > Run Build Task. You should also include a link for it in the package.json `scripts`.
