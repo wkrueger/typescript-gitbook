@@ -10,8 +10,7 @@ TypeScript is made to adapt to JavaScript. And JavaScript itself has had many mo
 
 * A TypeScript file is considered module-less if it has no imports or exports;
 * All typescript source files share the same global context. Which is defined at the `include` entry of the tsconfig;
-* A file can manually include a reference through the addition of the "triple slash directive" at the first line. Shivers from the good-ol-triple-slash-directive-times?
-
+* A file can manually include a reference through the addition of the "triple slash directive" at the first line.
 ```
 ///<reference path=“./path/to/file”/>
 ```
