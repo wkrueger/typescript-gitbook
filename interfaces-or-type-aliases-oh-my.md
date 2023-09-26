@@ -14,7 +14,7 @@ subject = true // error
 ```ts
 type Person = { name: string }
 type Callable = { phone: string }
-type CallablePerson = Person | Callable
+type CallablePerson = Person & Callable
 var person: CallablePerson = { name: 'John' } // error, missing "phone"
 ```
 
